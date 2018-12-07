@@ -1,0 +1,111 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scene/Calzone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/PlayerCharacter.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 64, 44.3077 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[node name="TestStage" type="Node" index="0"]
+
+[node name="Calzone6" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 184, 200 )
+
+[node name="Calzone5" parent="." index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 184, 264 )
+
+[node name="Calzone4" parent="." index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 184, 232 )
+
+[node name="Calzone3" parent="." index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 184, 296 )
+
+[node name="Calzone2" parent="." index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 184, 328 )
+
+[node name="Calzone" parent="." index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 184, 360 )
+
+[node name="PlayerCharacter" type="RigidBody2D" parent="." index="6"]
+
+position = Vector2( 184, 456 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 2
+mass = 1.0
+friction = 0.5
+bounce = 0.4
+gravity_scale = 3.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="PlayerCharacter" index="0"]
+
+position = Vector2( 0, -16 )
+scale = Vector2( 2, 1.5 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter" index="1"]
+
+position = Vector2( -1.90735e-006, -19.6923 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="RayCast2D" type="RayCast2D" parent="PlayerCharacter" index="2"]
+
+position = Vector2( 0, -8 )
+scale = Vector2( 1, 0.75 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="7"]
+
+position = Vector2( 512, 544 )
+scale = Vector2( 16, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 0.25
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="1"]
+
+position = Vector2( 1.90735e-006, -1.04904e-005 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+
