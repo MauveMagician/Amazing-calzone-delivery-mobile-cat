@@ -16,6 +16,9 @@ func get_input():
 	else:
 		jump = Vector2(0,0)
 
+func burn():
+	self.angular_velocity = 5
+
 func _ready():
 	pass
 
@@ -25,4 +28,7 @@ func _process(delta):
 func _physics_process(delta):
 	self.set_applied_force(thrust)
 	if(ray.is_colliding()):
+		self.mode = RigidBody2D.MODE_CHARACTER
 		self.apply_impulse(Vector2(0,0), jump)
+	else:
+		self.mode = RigidBody2D.MODE_RIGID
