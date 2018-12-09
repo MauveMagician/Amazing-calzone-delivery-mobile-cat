@@ -3,6 +3,7 @@ extends RigidBody2D
 var thrust = Vector2()
 var jump = Vector2()
 onready var ray = get_node("RayCast2D")
+var new_seed = [0,42]
 
 func get_input():
 	if Input.is_action_pressed("ui_left"):
@@ -17,9 +18,10 @@ func get_input():
 		jump = Vector2(0,0)
 
 func burn():
-	self.angular_velocity = 5
+	self.new_seed = rand_seed(new_seed[1])
+	self.angular_velocity = (self.new_seed[0] % 5) + 1
 
-func _ready():
+func _ready():	
 	pass
 
 func _process(delta):

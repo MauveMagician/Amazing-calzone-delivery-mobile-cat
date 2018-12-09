@@ -5,7 +5,7 @@
 [ext_resource path="res://Scene/Fire.gd" type="Script" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 30, 30 )
@@ -15,7 +15,7 @@ extents = Vector2( 30, 30 )
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[node name="TestStage" type="Node" index="0"]
+[node name="TestStage" type="Node"]
 
 [node name="Calzone6" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -64,7 +64,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fire" index="1"]
 
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="Fire2" type="Area2D" parent="." index="8"]
 
@@ -87,7 +87,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fire2" index="1"]
 
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="UI Layer" type="CanvasLayer" parent="." index="9"]
 
