@@ -1,10 +1,21 @@
 extends Node2D
 
-export var rank = "n/a"
+export var CurrentRank = "n/a"
+onready var StageRanks = ["n/a", "n/a", "n/a", "n/a", "n/a"]
 var calzones = 5
 
 func get():
-	return rank
+	return CurrentRank
 
-func set(new):
-	rank = new
+func setRank(calzoneNumber=0, time=0):
+	if(LevelManager.trackNo == 0):
+		if calzoneNumber >= 5 and time < 8:
+			CurrentRank = "A"
+		elif calzoneNumber >= 4 and time < 12:
+			CurrentRank = "B"
+		elif calzoneNumber >= 3 and time < 16:
+			CurrentRank = "C"
+		else:
+			CurrentRank = "D"
+		StageRanks[0] = CurrentRank
+	if(LevelManager.trackNo == 1):

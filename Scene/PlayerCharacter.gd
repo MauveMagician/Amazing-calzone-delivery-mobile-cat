@@ -39,6 +39,7 @@ func die():
 
 func win():
 	get_tree().paused = true
+	RankManager.setRank(calzones.size(), float($"UI Layer/Control/TimeElapsed".text))
 	var winscreen = preload("res://scene/WinScreen.tscn").instance()
 	winscreen.calzones = calzones.size()
 	self.find_node("UI Layer").add_child(winscreen)

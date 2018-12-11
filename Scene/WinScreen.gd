@@ -26,7 +26,11 @@ func showNext():
 		return
 
 func _input(event):
-	if Input.is_action_pressed("ui_accept") and accept:
+	if Input.is_action_pressed("ui_left") and accept:
+		LevelManager.call_deferred('loadLevel')
+		queue_free()
+	elif Input.is_action_pressed("ui_accept") and accept:
+		LevelManager.appendLevel()
 		LevelManager.call_deferred('loadLevel')
 		queue_free()
 
