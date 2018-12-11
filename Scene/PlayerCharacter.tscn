@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scene/PlayerCharacter.gd" type="Script" id=1]
 [ext_resource path="res://Scene/Calzone.tscn" type="PackedScene" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Scene/UI Layer.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -110,18 +111,18 @@ limit_bottom = 10000000
 limit_smoothed = false
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
-smoothing_enabled = false
+smoothing_enabled = true
 smoothing_speed = 5.0
 offset_v = 0.0
 offset_h = 0.0
 drag_margin_left = 0.1
-drag_margin_top = 0.2
-drag_margin_right = 0.2
-drag_margin_bottom = 0.6
+drag_margin_top = 0.1
+drag_margin_right = 0.1
+drag_margin_bottom = 0.1
 editor_draw_screen = true
 editor_draw_limits = true
 editor_draw_drag_margin = true
-_sections_unfolded = [ "Drag Margin", "Editor", "Transform" ]
+_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Offset", "Smoothing", "Transform" ]
 
 [node name="Timer" type="Timer" parent="." index="11"]
 
@@ -129,5 +130,7 @@ process_mode = 1
 wait_time = 0.5
 one_shot = false
 autostart = true
+
+[node name="UI Layer" parent="." index="12" instance=ExtResource( 4 )]
 
 

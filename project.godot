@@ -14,6 +14,11 @@ config/name="amazing-calzone"
 run/main_scene="res://Scene/TestStage.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+RankManager="*res://Scene/RankManager.gd"
+LevelManager="*res://Scene/LevelManager.gd"
+
 [display]
 
 window/size/resizable=false
