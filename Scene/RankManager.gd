@@ -18,4 +18,13 @@ func setRank(calzoneNumber=0, time=0):
 		else:
 			CurrentRank = "D"
 		StageRanks[0] = CurrentRank
-	if(LevelManager.trackNo == 1):
+	elif(LevelManager.trackNo == 1):
+		if calzoneNumber >= 5 and time < 20:
+			CurrentRank = "A"
+		elif calzoneNumber >= 4 and time < 40:
+			CurrentRank = "B"
+		elif calzoneNumber >= 3 and time < 60:
+			CurrentRank = "C"
+		else:
+			CurrentRank = "D"
+		StageRanks[1] = CurrentRank

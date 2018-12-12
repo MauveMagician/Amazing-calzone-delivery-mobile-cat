@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="amazing-calzone"
-run/main_scene="res://Scene/TestStage.tscn"
+run/main_scene="res://Scene/Stage1.tscn"
 config/icon="res://icon.png"
 
 [autoload]

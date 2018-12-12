@@ -8,28 +8,32 @@
 [ext_resource path="res://Scene/Ground.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scene/Ground.gd" type="Script" id=7]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 30, 30 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 30.9508 )
 
-[node name="TestStage" type="Node" index="0"]
+[node name="TestStage" type="Node"]
 
 [node name="Customer" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 1695.42, 417.478 )
 
 [node name="PlayerCharacter" parent="." index="1" instance=ExtResource( 2 )]
 
 [node name="Fire" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 448, 448 )
 
 [node name="Fire2" type="Area2D" parent="." index="3"]
 
@@ -53,7 +57,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fire2" index="1"]
 
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Ground" parent="." index="4" instance=ExtResource( 6 )]
 
@@ -78,7 +82,7 @@ texture = ExtResource( 5 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2" index="1"]
 
 position = Vector2( 1.90735e-006, -1.04904e-005 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." index="6"]
@@ -103,7 +107,7 @@ texture = ExtResource( 5 )
 
 position = Vector2( 0, -0.97541 )
 scale = Vector2( 1, 0.97127 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [connection signal="body_entered" from="Fire2" to="Fire2" method="_on_Fire_body_entered"]
 
