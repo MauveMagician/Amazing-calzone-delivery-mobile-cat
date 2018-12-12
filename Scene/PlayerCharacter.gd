@@ -25,6 +25,9 @@ func get_input():
 		jump = Vector2(0, -400)
 	else:
 		jump = Vector2(0,0)
+	if Input.is_action_pressed("ui_retry"):
+		LevelManager.call_deferred('loadLevel')
+		queue_free()
 
 func burn():
 	self.new_seed = rand_seed(new_seed[1])
@@ -35,7 +38,8 @@ func takeDamage():
 		self.die()
 
 func die():
-	pass
+	var losescreen = preload("res://scene/DeathScreen.tscn").instance()
+	self.find_node("UI Layer").add_child(losescreen)
 
 func win():
 	get_tree().paused = true
