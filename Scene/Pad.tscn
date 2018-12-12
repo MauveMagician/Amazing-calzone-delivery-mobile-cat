@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scene/Fire.gd" type="Script" id=1]
+[ext_resource path="res://Scene/Pad.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -8,10 +8,11 @@
 custom_solver_bias = 0.0
 extents = Vector2( 30, 30 )
 
-[node name="Fire" type="Area2D"]
+[node name="Pad" type="Area2D" index="0"]
 
 editor/display_folded = true
-position = Vector2( 450, 450 )
+position = Vector2( -384, 416 )
+scale = Vector2( 1.5, 1.5 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -22,6 +23,9 @@ audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 

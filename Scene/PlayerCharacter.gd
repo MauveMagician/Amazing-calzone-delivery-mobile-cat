@@ -9,6 +9,10 @@ var rank = ""
 onready var ray = get_node("RayCast2D")
 onready var ray2 = get_node("RayCast2D2")
 onready var ray3 = get_node("RayCast2D3")
+onready var ray4 = get_node("RayCast2D4")
+onready var ray5 = get_node("RayCast2D5")
+onready var ray6 = get_node("RayCast2D6")
+onready var ray7 = get_node("RayCast2D7")
 onready var calzones = [$Calzone, $Calzone2, $Calzone3, $Calzone4, $Calzone5]
 
 func calzonePop(calzone):
@@ -31,7 +35,12 @@ func get_input():
 
 func burn():
 	self.new_seed = rand_seed(new_seed[1])
-	self.angular_velocity = (self.new_seed[0] % 3) + 3
+	self.angular_velocity = (self.new_seed[0] % 3) * 3 + 3
+
+func turbo():
+	self.apply_impulse(Vector2(0,0), Vector2(300,0))
+	for i in calzones:
+		i.apply_impulse(Vector2(0,0), Vector2(100,0))
 
 func takeDamage():
 	if calzones.size() < 1:
@@ -58,7 +67,7 @@ func _process(delta):
 
 func _physics_process(delta):
 	self.set_applied_force(thrust)
-	if ray.is_colliding() or ray2.is_colliding() or ray3.is_colliding():
+	if ray.is_colliding() or ray2.is_colliding() or ray3.is_colliding() or ray4.is_colliding() or ray5.is_colliding() or ray6.is_colliding() or ray7.is_colliding():
 		if(jump != Vector2(0,0)):
 			self.apply_impulse(Vector2(0,0), jump)
 			for i in calzones:

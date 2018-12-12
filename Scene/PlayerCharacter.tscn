@@ -78,7 +78,47 @@ exclude_parent = true
 cast_to = Vector2( 0, 50 )
 collision_mask = 1
 
-[node name="RayCast2D3" type="RayCast2D" parent="." index="8"]
+[node name="RayCast2D4" type="RayCast2D" parent="." index="8"]
+
+position = Vector2( -62, -8 )
+scale = Vector2( 1, 0.75 )
+enabled = false
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+
+[node name="RayCast2D5" type="RayCast2D" parent="." index="9"]
+
+position = Vector2( 61, -8 )
+scale = Vector2( 1, 0.75 )
+enabled = false
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+
+[node name="RayCast2D6" type="RayCast2D" parent="." index="10"]
+
+position = Vector2( -34, -17 )
+rotation = 1.5708
+scale = Vector2( 1, 0.75 )
+enabled = false
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="RayCast2D7" type="RayCast2D" parent="." index="11"]
+
+position = Vector2( 35, -17 )
+rotation = -1.5708
+scale = Vector2( 1, 0.75 )
+enabled = false
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="RayCast2D3" type="RayCast2D" parent="." index="12"]
 
 position = Vector2( 46, -8 )
 scale = Vector2( 1, 0.75 )
@@ -87,7 +127,7 @@ exclude_parent = true
 cast_to = Vector2( 0, 50 )
 collision_mask = 1
 
-[node name="RayCast2D" type="RayCast2D" parent="." index="9"]
+[node name="RayCast2D" type="RayCast2D" parent="." index="13"]
 
 position = Vector2( 0, -8 )
 scale = Vector2( 1, 0.75 )
@@ -97,7 +137,7 @@ cast_to = Vector2( 0, 50 )
 collision_mask = 1
 _sections_unfolded = [ "Transform" ]
 
-[node name="Camera2D" type="Camera2D" parent="." index="10"]
+[node name="Camera2D" type="Camera2D" parent="." index="14"]
 
 position = Vector2( 6, -203 )
 anchor_mode = 1
@@ -124,13 +164,13 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Offset", "Smoothing", "Transform" ]
 
-[node name="Timer" type="Timer" parent="." index="11"]
+[node name="Timer" type="Timer" parent="." index="15"]
 
 process_mode = 1
 wait_time = 0.5
 one_shot = false
 autostart = true
 
-[node name="UI Layer" parent="." index="12" instance=ExtResource( 4 )]
+[node name="UI Layer" parent="." index="16" instance=ExtResource( 4 )]
 
 

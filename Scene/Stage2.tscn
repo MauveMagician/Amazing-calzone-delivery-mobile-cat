@@ -6,7 +6,7 @@
 [ext_resource path="res://Scene/Fire.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=5]
 
-[node name="Stage2" type="Node"]
+[node name="Stage2" type="Node" index="0"]
 
 [node name="Ground4" parent="." index="0" instance=ExtResource( 1 )]
 

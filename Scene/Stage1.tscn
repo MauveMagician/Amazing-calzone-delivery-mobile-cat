@@ -7,8 +7,6 @@
 
 [node name="Stage1" type="Node"]
 
-editor/display_folded = true
-
 [node name="Ground2" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( -512, 512 )
@@ -20,14 +18,13 @@ position = Vector2( 512, 512 )
 [node name="Customer" parent="." index="2" instance=ExtResource( 2 )]
 
 position = Vector2( 832, 384 )
-scale = Vector2( 2, 2 )
 _sections_unfolded = [ "Collision", "Transform", "Z Index" ]
 
 [node name="Building" parent="." index="3" instance=ExtResource( 3 )]
 
 [node name="PlayerCharacter" parent="." index="4" instance=ExtResource( 4 )]
 
-position = Vector2( 160, 416 )
+position = Vector2( -864, 416 )
 
 [node name="Building2" parent="." index="5" instance=ExtResource( 3 )]
 

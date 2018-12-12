@@ -1,5 +1,136 @@
-[gd_scene format=2]
+[gd_scene load_steps=7 format=2]
 
-[node name="Node" type="Node" index="0"]
+[ext_resource path="res://Scene/Ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/Building.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scene/Fire.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene/Customer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=6]
+
+[node name="Stage4" type="Node" index="0"]
+
+[node name="Ground" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( -320, 544 )
+
+[node name="Building" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( -1152, 288 )
+
+[node name="Ground2" parent="." index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 704, 544 )
+
+[node name="Ground3" parent="." index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 1728, 544 )
+
+[node name="Ground4" parent="." index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 2702.2, 364.097 )
+rotation = -0.349066
+scale = Vector2( 16, 2 )
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground5" parent="." index="5" instance=ExtResource( 1 )]
+
+position = Vector2( 3664, 192 )
+
+[node name="Pad" parent="." index="6" instance=ExtResource( 3 )]
+
+editor/display_folded = false
+position = Vector2( -64, 432 )
+
+[node name="Fire" parent="." index="7" instance=ExtResource( 4 )]
+
+position = Vector2( 448, 448 )
+
+[node name="Fire2" parent="." index="8" instance=ExtResource( 4 )]
+
+position = Vector2( 512, 448 )
+
+[node name="Fire3" parent="." index="9" instance=ExtResource( 4 )]
+
+position = Vector2( 576, 448 )
+
+[node name="Pad2" parent="." index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 976, 432 )
+
+[node name="Fire4" parent="." index="11" instance=ExtResource( 4 )]
+
+position = Vector2( 1408, 448 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire5" parent="." index="12" instance=ExtResource( 4 )]
+
+position = Vector2( 1744, 448 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire6" parent="." index="13" instance=ExtResource( 4 )]
+
+position = Vector2( 2623, 290.356 )
+rotation = -0.349066
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Ground6" parent="." index="14" instance=ExtResource( 1 )]
+
+position = Vector2( 4688, 192 )
+
+[node name="Pad3" parent="." index="15" instance=ExtResource( 3 )]
+
+position = Vector2( 3440, 80 )
+
+[node name="Fire7" parent="." index="16" instance=ExtResource( 4 )]
+
+position = Vector2( 3872, 96 )
+
+[node name="Fire8" parent="." index="17" instance=ExtResource( 4 )]
+
+position = Vector2( 4176, 96 )
+
+[node name="Pad4" parent="." index="18" instance=ExtResource( 3 )]
+
+position = Vector2( 5152, 80 )
+
+[node name="Ground7" parent="." index="19" instance=ExtResource( 1 )]
+
+position = Vector2( 5608.68, 442.191 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground8" parent="." index="20" instance=ExtResource( 1 )]
+
+position = Vector2( 6494.95, 953.167 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Pad5" parent="." index="21" instance=ExtResource( 3 )]
+
+position = Vector2( 6144, 608 )
+
+[node name="Ground9" parent="." index="22" instance=ExtResource( 1 )]
+
+position = Vector2( 7392, 1200 )
+
+[node name="Building2" parent="." index="23" instance=ExtResource( 2 )]
+
+position = Vector2( 8224, 944 )
+
+[node name="Building3" parent="." index="24" instance=ExtResource( 2 )]
+
+position = Vector2( 8224, 304 )
+
+[node name="Customer" parent="." index="25" instance=ExtResource( 5 )]
+
+position = Vector2( 7568, 1072 )
+
+[node name="Building4" parent="." index="26" instance=ExtResource( 2 )]
+
+position = Vector2( 8224, -336 )
+
+[node name="PlayerCharacter" parent="." index="27" instance=ExtResource( 6 )]
+
+position = Vector2( -656, 448 )
 
 
