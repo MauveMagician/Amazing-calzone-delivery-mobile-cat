@@ -1,0 +1,209 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scene/Hell.gd" type="Script" id=1]
+[ext_resource path="res://Scene/Fire.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scene/HellGround.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scene/HellBuilding.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene/Paganini.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
+
+[node name="Hell" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Fire9" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 10432, 1456 )
+
+[node name="Ground" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 1435.46, 791.6 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground3" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 2321.36, 1303.57 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground24" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 18453.4, 1758.62 )
+rotation = -0.261799
+scale = Vector2( 43.1456, 2 )
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground19" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 14718.1, 1834.16 )
+rotation = 0.610865
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground6" parent="." index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 3206.89, 1815.62 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground7" parent="." index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 6074.37, 2311.28 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground9" parent="." index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 7921.42, 2308.71 )
+rotation = -0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground11" parent="." index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 8805.68, 1798.15 )
+rotation = -0.523599
+_sections_unfolded = [ "Collision", "Material", "Transform", "Visibility" ]
+
+[node name="Ground2" parent="." index="9" instance=ExtResource( 3 )]
+
+[node name="Ground4" parent="." index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 4128, 2064 )
+
+[node name="Ground13" parent="." index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 10752, 1552 )
+
+[node name="Ground14" parent="." index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 11776, 1552 )
+
+[node name="Ground20" parent="." index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 15600, 2112 )
+
+[node name="Ground21" parent="." index="14" instance=ExtResource( 3 )]
+
+position = Vector2( 16624, 2112 )
+
+[node name="Ground25" parent="." index="15" instance=ExtResource( 3 )]
+
+position = Vector2( 20272, 1408 )
+
+[node name="Ground15" parent="." index="16" instance=ExtResource( 3 )]
+
+position = Vector2( 12800, 1552 )
+
+[node name="Ground16" parent="." index="17" instance=ExtResource( 3 )]
+
+position = Vector2( 13824, 1552 )
+
+[node name="Ground5" parent="." index="18" instance=ExtResource( 3 )]
+
+position = Vector2( 5152, 2064 )
+
+[node name="Ground8" parent="." index="19" instance=ExtResource( 3 )]
+
+position = Vector2( 6992, 2560 )
+
+[node name="Ground10" parent="." index="20" instance=ExtResource( 3 )]
+
+position = Vector2( 6992, 2560 )
+
+[node name="Ground12" parent="." index="21" instance=ExtResource( 3 )]
+
+position = Vector2( 9728, 1552 )
+
+[node name="Building" parent="." index="22" instance=ExtResource( 4 )]
+
+position = Vector2( -320, 288 )
+
+[node name="Building2" parent="." index="23" instance=ExtResource( 4 )]
+
+position = Vector2( 21104, 1152 )
+
+[node name="Building3" parent="." index="24" instance=ExtResource( 4 )]
+
+position = Vector2( 21104, 512 )
+
+[node name="Paganini" parent="." index="25" instance=ExtResource( 5 )]
+
+position = Vector2( 20448, 1280 )
+
+[node name="PlayerCharacter" parent="." index="26" instance=ExtResource( 6 )]
+
+position = Vector2( 288, 448 )
+
+[node name="Pad" parent="." index="27" instance=ExtResource( 7 )]
+
+position = Vector2( 7980.71, 2153.75 )
+rotation = -0.523599
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire" parent="." index="28" instance=ExtResource( 2 )]
+
+position = Vector2( 816, 448 )
+
+[node name="Fire2" parent="." index="29" instance=ExtResource( 2 )]
+
+position = Vector2( 4320, 1968 )
+
+[node name="Fire3" parent="." index="30" instance=ExtResource( 2 )]
+
+position = Vector2( 3007.92, 1588.51 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire4" parent="." index="31" instance=ExtResource( 2 )]
+
+position = Vector2( 1918, 960.47 )
+rotation = 0.523599
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire5" parent="." index="32" instance=ExtResource( 2 )]
+
+position = Vector2( 4384, 1968 )
+
+[node name="Fire6" parent="." index="33" instance=ExtResource( 2 )]
+
+position = Vector2( 4992, 1968 )
+
+[node name="Fire7" parent="." index="34" instance=ExtResource( 2 )]
+
+position = Vector2( 7016, 2448 )
+scale = Vector2( 1.75, 1.5 )
+
+[node name="Fire11" parent="." index="35" instance=ExtResource( 2 )]
+
+position = Vector2( 11968, 1456 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire12" parent="." index="36" instance=ExtResource( 2 )]
+
+position = Vector2( 12672, 1440 )
+scale = Vector2( 1.625, 1.5 )
+
+[node name="Fire13" parent="." index="37" instance=ExtResource( 2 )]
+
+position = Vector2( 12780, 1440 )
+scale = Vector2( 1.625, 1.5 )
+
+[node name="Fire8" parent="." index="38" instance=ExtResource( 2 )]
+
+position = Vector2( 9632, 1456 )
+
+[node name="Pad2" parent="." index="39" instance=ExtResource( 7 )]
+
+editor/display_folded = false
+position = Vector2( 9872, 1440 )
+
+[node name="Pad3" parent="." index="40" instance=ExtResource( 7 )]
+
+position = Vector2( 10928, 1440 )
+
+[node name="Pad4" parent="." index="41" instance=ExtResource( 7 )]
+
+position = Vector2( 12464, 1280 )
+
+

@@ -11,13 +11,15 @@ config_version=3
 [application]
 
 config/name="amazing-calzone"
-run/main_scene="res://Scene/Stage1.tscn"
+run/main_scene="res://Scene/StartScreen.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 RankManager="*res://Scene/RankManager.gd"
 LevelManager="*res://Scene/LevelManager.gd"
+BG_Music_Player="*res://Scene/BG_Music_Player.tscn"
+BG_Music_Player2="*res://Scene/BG_Music_Player2.tscn"
 
 [display]
 

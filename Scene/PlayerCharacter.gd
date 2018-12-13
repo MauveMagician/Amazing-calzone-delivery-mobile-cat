@@ -38,7 +38,7 @@ func burn():
 	self.angular_velocity = (self.new_seed[0] % 3) * 3 + 3
 
 func turbo():
-	self.apply_impulse(Vector2(0,0), Vector2(300,0))
+	self.apply_impulse(Vector2(0,0), Vector2(200,0))
 	for i in calzones:
 		i.apply_impulse(Vector2(0,0), Vector2(100,0))
 
@@ -66,7 +66,7 @@ func _process(delta):
 	get_input()
 
 func _physics_process(delta):
-	self.set_applied_force(thrust)
+	self.set_applied_force(thrust + ray.get_collision_normal())
 	if ray.is_colliding() or ray2.is_colliding() or ray3.is_colliding() or ray4.is_colliding() or ray5.is_colliding() or ray6.is_colliding() or ray7.is_colliding():
 		if(jump != Vector2(0,0)):
 			self.apply_impulse(Vector2(0,0), jump)

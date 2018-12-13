@@ -6,7 +6,6 @@
 [node name="WinScreen" type="NinePatchRect"]
 
 pause_mode = 2
-editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -154,7 +153,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Press SPACE to continue"
+text = "Press SPACE to continue or [R] to retry"
 align = 1
 valign = 1
 percent_visible = 1.0

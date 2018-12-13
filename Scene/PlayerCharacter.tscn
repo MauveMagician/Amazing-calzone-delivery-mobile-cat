@@ -12,7 +12,7 @@ custom_solver_bias = 0.0
 radius = 44.6761
 height = 28.628
 
-[node name="PlayerCharacter" type="RigidBody2D" index="0"]
+[node name="PlayerCharacter" type="RigidBody2D"]
 
 position = Vector2( 184, 456 )
 input_pickable = false
@@ -72,8 +72,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="RayCast2D2" type="RayCast2D" parent="." index="7"]
 
-position = Vector2( -47, -8 )
-scale = Vector2( 1, 0.75 )
+position = Vector2( -47, -6.19888e-006 )
+scale = Vector2( 1, 1 )
 enabled = false
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -81,8 +81,8 @@ collision_mask = 1
 
 [node name="RayCast2D4" type="RayCast2D" parent="." index="8"]
 
-position = Vector2( -62, -8 )
-scale = Vector2( 1, 0.75 )
+position = Vector2( -62, -4.00002 )
+scale = Vector2( 1, 0.875 )
 enabled = false
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -90,8 +90,8 @@ collision_mask = 1
 
 [node name="RayCast2D5" type="RayCast2D" parent="." index="9"]
 
-position = Vector2( 61, -8 )
-scale = Vector2( 1, 0.75 )
+position = Vector2( 61, -4.00002 )
+scale = Vector2( 1, 0.875 )
 enabled = false
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -121,8 +121,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="RayCast2D3" type="RayCast2D" parent="." index="12"]
 
-position = Vector2( 46, -8 )
-scale = Vector2( 1, 0.75 )
+position = Vector2( 46, -6.19888e-006 )
+scale = Vector2( 1, 1 )
 enabled = false
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -130,8 +130,8 @@ collision_mask = 1
 
 [node name="RayCast2D" type="RayCast2D" parent="." index="13"]
 
-position = Vector2( 0, -8 )
-scale = Vector2( 1, 0.75 )
+position = Vector2( 0, -6.19888e-006 )
+scale = Vector2( 1, 1 )
 enabled = true
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
