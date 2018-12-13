@@ -3,6 +3,7 @@ extends RigidBody2D
 export var thrustForce = 400
 
 var thrust = Vector2()
+var can_jump = false
 var jump = Vector2()
 var new_seed = [0,42]
 var rank = ""
@@ -25,10 +26,8 @@ func get_input():
 		thrust = Vector2(thrustForce, 0)
 	else:
 		thrust = Vector2(0,0)
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") and can_jump:
 		jump = Vector2(0, -400)
-	else:
-		jump = Vector2(0,0)
 	if Input.is_action_pressed("ui_retry"):
 		LevelManager.call_deferred('loadLevel')
 		queue_free()
@@ -75,6 +74,10 @@ func _physics_process(delta):
 					if i.has_method("apply_impulse"):
 						if i.is_on_character():
 							i.apply_impulse(Vector2(0,0), jump)
+			jump = Vector2(0,0)
 		self.mode = MODE_CHARACTER
 	elif not (ray.is_colliding()):
 		self.mode = MODE_RIGID
+
+func _on_JumpTimer_timeout():
+	can_jump = true

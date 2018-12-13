@@ -73,7 +73,6 @@ _sections_unfolded = [ "Transform" ]
 [node name="RayCast2D2" type="RayCast2D" parent="." index="7"]
 
 position = Vector2( -47, -6.19888e-006 )
-scale = Vector2( 1, 1 )
 enabled = false
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -122,7 +121,6 @@ _sections_unfolded = [ "Transform" ]
 [node name="RayCast2D3" type="RayCast2D" parent="." index="12"]
 
 position = Vector2( 46, -6.19888e-006 )
-scale = Vector2( 1, 1 )
 enabled = false
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -131,7 +129,6 @@ collision_mask = 1
 [node name="RayCast2D" type="RayCast2D" parent="." index="13"]
 
 position = Vector2( 0, -6.19888e-006 )
-scale = Vector2( 1, 1 )
 enabled = true
 exclude_parent = true
 cast_to = Vector2( 0, 50 )
@@ -179,6 +176,13 @@ autostart = true
 
 [node name="UI Layer" parent="." index="16" instance=ExtResource( 5 )]
 
+[node name="JumpTimer" type="Timer" parent="." index="17"]
+
+process_mode = 1
+wait_time = 0.3
+one_shot = true
+autostart = true
+
 [connection signal="explodeSignal" from="Calzone" to="Camera2D/ScreenShake" method="_on_Calzone_explodeSignal"]
 
 [connection signal="explodeSignal" from="Calzone2" to="Camera2D/ScreenShake" method="_on_Calzone2_explodeSignal"]
@@ -188,5 +192,7 @@ autostart = true
 [connection signal="explodeSignal" from="Calzone4" to="Camera2D/ScreenShake" method="_on_Calzone4_explodeSignal"]
 
 [connection signal="explodeSignal" from="Calzone5" to="Camera2D/ScreenShake" method="_on_Calzone5_explodeSignal"]
+
+[connection signal="timeout" from="JumpTimer" to="." method="_on_JumpTimer_timeout"]
 
 

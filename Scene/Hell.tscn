@@ -8,7 +8,7 @@
 [ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
 
-[node name="Hell" type="Node"]
+[node name="Hell" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -171,8 +171,8 @@ position = Vector2( 4992, 1968 )
 
 [node name="Fire7" parent="." index="34" instance=ExtResource( 2 )]
 
-position = Vector2( 7016, 2448 )
-scale = Vector2( 1.75, 1.5 )
+position = Vector2( 6952.5, 2464 )
+scale = Vector2( 1.17187, 1.0625 )
 
 [node name="Fire11" parent="." index="35" instance=ExtResource( 2 )]
 
@@ -205,5 +205,21 @@ position = Vector2( 10928, 1440 )
 [node name="Pad4" parent="." index="41" instance=ExtResource( 7 )]
 
 position = Vector2( 12464, 1280 )
+
+[node name="Fire10" parent="." index="42" instance=ExtResource( 2 )]
+
+position = Vector2( 15600, 2016 )
+
+[node name="Fire14" parent="." index="43" instance=ExtResource( 2 )]
+
+position = Vector2( 16120, 2016 )
+
+[node name="Fire15" parent="." index="44" instance=ExtResource( 2 )]
+
+position = Vector2( 16752, 2016 )
+
+[node name="Fire16" parent="." index="45" instance=ExtResource( 2 )]
+
+position = Vector2( 16816, 2016 )
 
 
