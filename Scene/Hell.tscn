@@ -8,7 +8,7 @@
 [ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
 
-[node name="Hell" type="Node" index="0"]
+[node name="Hell" type="Node"]
 
 script = ExtResource( 1 )
 

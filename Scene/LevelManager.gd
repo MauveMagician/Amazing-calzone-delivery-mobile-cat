@@ -2,7 +2,7 @@ extends Node
 
 onready var levels = ["res://scene/Stage1.tscn", "res://scene/Stage2.tscn", "res://scene/Stage3.tscn", "res://scene/Stage4.tscn", "res://scene/Ending1.tscn"]
 var trackNo = 0
-var hell = true
+var hell = false
 
 func setTrack(index):
 	trackNo = index
