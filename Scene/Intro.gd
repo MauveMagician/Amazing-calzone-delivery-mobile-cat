@@ -15,7 +15,6 @@ func _on_TextTick_timeout():
 		$TextTick.stop()
 
 func _input(event):
-	print(textindex)
 	if finale:
 		if $CatTick.is_stopped():
 			if Input.is_action_just_pressed("ui_accept"):
@@ -26,9 +25,9 @@ func _input(event):
 			$Control/NinePatchRect/Label.percent_visible = 1.0
 		else:
 			$TextTick.start()
-			$Images.get_child(textindex).visible = false
-			textindex += 1
-			if textindex < 4:
+			if textindex < 3:
+				$Images.get_child(textindex).visible = false
+				textindex += 1
 				$Images.get_child(textindex).visible = true
 				$Control/NinePatchRect/Label.text = texts[textindex]
 				$Control/NinePatchRect/Label.percent_visible = 0

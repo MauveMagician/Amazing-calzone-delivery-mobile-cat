@@ -9,7 +9,7 @@
 [ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Sandro_Botticelli_-_La_Carte_de_l'Enfer.jpg" type="Texture" id=8]
 
-[node name="Hell" type="Node" index="0"]
+[node name="Hell" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -180,11 +180,11 @@ position = Vector2( 4384, 1968 )
 
 [node name="Fire6" parent="." index="35" instance=ExtResource( 2 )]
 
-position = Vector2( 4992, 1968 )
+position = Vector2( 5184, 1968 )
 
 [node name="Fire7" parent="." index="36" instance=ExtResource( 2 )]
 
-position = Vector2( 6952.5, 2464 )
+position = Vector2( 6880, 2464 )
 scale = Vector2( 1.17187, 1.0625 )
 
 [node name="Fire11" parent="." index="37" instance=ExtResource( 2 )]

@@ -78,15 +78,15 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-position = Vector2( 0.122278, 0.122248 )
-scale = Vector2( 0.298216, 0.298216 )
+position = Vector2( -2, 2 )
+scale = Vector2( 0.64, 0.36 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 2.29941, 1.84296 )
-scale = Vector2( 0.64074, 0.877327 )
+position = Vector2( -8.00002, -1.60263 )
+scale = Vector2( 0.969697, 0.981739 )
 shape = SubResource( 1 )
 
 [node name="Particles2D" type="Particles2D" parent="." index="2"]
