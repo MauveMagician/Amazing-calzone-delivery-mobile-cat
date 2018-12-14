@@ -1,7 +1,7 @@
 extends Node2D
 
 export var CurrentRank = "n/a"
-onready var StageRanks = ["n/a", "n/a", "n/a", "n/a"]
+onready var StageRanks = ["n/a", "n/a", "n/a", "n/a", "n/a"]
 var calzones = 5
 
 func getStageRanks():
@@ -35,7 +35,16 @@ func better(current, new):
 		return true
 
 func setRank(calzoneNumber=0, time=0):
-	if(LevelManager.trackNo == 0):
+	if LevelManager.hell:
+		if calzoneNumber >= 5 and time < 50:
+			CurrentRank = "A"
+		elif calzoneNumber >= 4 and time < 70:
+			CurrentRank = "B"
+		elif calzoneNumber >= 3 and time < 90:
+			CurrentRank = "C"
+		else:
+			CurrentRank = "D"
+	elif(LevelManager.trackNo == 0):
 		if calzoneNumber >= 5 and time < 8:
 			CurrentRank = "A"
 		elif calzoneNumber >= 4 and time < 12:

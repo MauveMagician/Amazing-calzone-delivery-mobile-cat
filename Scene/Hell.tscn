@@ -9,7 +9,7 @@
 [ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Sandro_Botticelli_-_La_Carte_de_l'Enfer.jpg" type="Texture" id=8]
 
-[node name="Hell" type="Node"]
+[node name="Hell" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -142,15 +142,15 @@ position = Vector2( 7980.71, 2153.75 )
 rotation = -0.523599
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Pad5" parent="." index="28" instance=ExtResource( 7 )]
+[node name="Pad7" parent="." index="28" instance=ExtResource( 7 )]
 
-position = Vector2( 8505.65, 1846.17 )
+position = Vector2( 7648.49, 2337.04 )
 rotation = -0.523599
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Pad6" parent="." index="29" instance=ExtResource( 7 )]
+[node name="Pad5" parent="." index="29" instance=ExtResource( 7 )]
 
-position = Vector2( 8505.65, 1846.17 )
+position = Vector2( 8610.26, 1780.61 )
 rotation = -0.523599
 _sections_unfolded = [ "Collision", "Transform" ]
 
@@ -219,27 +219,23 @@ position = Vector2( 10928, 1440 )
 
 position = Vector2( 12464, 1312 )
 
-[node name="Pad7" parent="." index="44" instance=ExtResource( 7 )]
-
-position = Vector2( 7448, 2448 )
-
-[node name="Fire10" parent="." index="45" instance=ExtResource( 2 )]
+[node name="Fire10" parent="." index="44" instance=ExtResource( 2 )]
 
 position = Vector2( 15600, 2016 )
 
-[node name="Fire14" parent="." index="46" instance=ExtResource( 2 )]
+[node name="Fire14" parent="." index="45" instance=ExtResource( 2 )]
 
 position = Vector2( 16120, 2016 )
 
-[node name="Fire15" parent="." index="47" instance=ExtResource( 2 )]
+[node name="Fire15" parent="." index="46" instance=ExtResource( 2 )]
 
 position = Vector2( 16752, 2016 )
 
-[node name="Fire16" parent="." index="48" instance=ExtResource( 2 )]
+[node name="Fire16" parent="." index="47" instance=ExtResource( 2 )]
 
 position = Vector2( 16816, 2016 )
 
-[node name="ParalaxLayers" type="CanvasLayer" parent="." index="49"]
+[node name="ParalaxLayers" type="CanvasLayer" parent="." index="48"]
 
 layer = 1
 offset = Vector2( 0, 0 )

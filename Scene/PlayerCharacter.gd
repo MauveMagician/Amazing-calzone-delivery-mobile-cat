@@ -71,6 +71,8 @@ func _physics_process(delta):
 		$Sprite/Sprite3.rotation += thrust.x/abs(thrust.x) * deg2rad(10)
 		if not MotorSound.is_playing():
 			MotorSound.play()
+	elif MotorSound.is_playing():
+		MotorSound.stop()
 	self.set_applied_force(thrust + ray.get_collision_normal())
 	if ray.is_colliding() or ray2.is_colliding() or ray3.is_colliding() or ray4.is_colliding() or ray5.is_colliding() or ray6.is_colliding() or ray7.is_colliding():
 		if(jump != Vector2(0,0)):
