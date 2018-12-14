@@ -11,6 +11,7 @@ func is_on_character():
 		return true
 
 func explode():
+	Explosion.play()
 	emit_signal("explodeSignal")
 	queue_free()
 	get_parent().calzonePop(self)

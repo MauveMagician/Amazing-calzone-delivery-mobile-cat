@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/funiculi.wav-ef3e0445f3f7545891ad7948ddd35acd.sample"
+
+[deps]
+
+source_file="res://funiculi.wav"
+dest_files=[ "res://.import/funiculi.wav-ef3e0445f3f7545891ad7948ddd35acd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

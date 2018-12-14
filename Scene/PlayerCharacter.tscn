@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scene/PlayerCharacter.gd" type="Script" id=1]
 [ext_resource path="res://Scene/Calzone.tscn" type="PackedScene" id=2]
-[ext_resource path="res://icon.png" type="Texture" id=3]
-[ext_resource path="res://Scene/ScreenShake.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scene/UI Layer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://chonker.png" type="Texture" id=3]
+[ext_resource path="res://wheel.png" type="Texture" id=4]
+[ext_resource path="res://Scene/ScreenShake.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scene/UI Layer.tscn" type="PackedScene" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -59,9 +60,22 @@ position = Vector2( 0, -224 )
 
 [node name="Sprite" type="Sprite" parent="." index="5"]
 
-position = Vector2( 0, -16 )
-scale = Vector2( 2, 1.5 )
+position = Vector2( 10, -41.8825 )
+scale = Vector2( 0.2125, 0.2125 )
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="Sprite2" type="Sprite" parent="Sprite" index="0"]
+
+position = Vector2( 169.412, 310.035 )
+scale = Vector2( 0.732302, 0.732302 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="Sprite" index="1"]
+
+position = Vector2( -348.235, 310.035 )
+scale = Vector2( 0.732302, 0.732302 )
+texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
 
@@ -162,7 +176,7 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Offset", "Smoothing", "Transform" ]
 
-[node name="ScreenShake" parent="Camera2D" index="0" instance=ExtResource( 4 )]
+[node name="ScreenShake" parent="Camera2D" index="0" instance=ExtResource( 5 )]
 
 pause_mode = 2
 _sections_unfolded = [ "Pause" ]
@@ -174,7 +188,7 @@ wait_time = 0.5
 one_shot = false
 autostart = true
 
-[node name="UI Layer" parent="." index="16" instance=ExtResource( 5 )]
+[node name="UI Layer" parent="." index="16" instance=ExtResource( 6 )]
 
 [node name="JumpTimer" type="Timer" parent="." index="17"]
 

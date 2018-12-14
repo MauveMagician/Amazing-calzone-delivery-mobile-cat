@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scene/Hell.gd" type="Script" id=1]
 [ext_resource path="res://Scene/Fire.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scene/Paganini.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sandro_Botticelli_-_La_Carte_de_l'Enfer.jpg" type="Texture" id=8]
 
 [node name="Hell" type="Node" index="0"]
 
@@ -141,85 +142,132 @@ position = Vector2( 7980.71, 2153.75 )
 rotation = -0.523599
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Fire" parent="." index="28" instance=ExtResource( 2 )]
+[node name="Pad5" parent="." index="28" instance=ExtResource( 7 )]
+
+position = Vector2( 8505.65, 1846.17 )
+rotation = -0.523599
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Pad6" parent="." index="29" instance=ExtResource( 7 )]
+
+position = Vector2( 8505.65, 1846.17 )
+rotation = -0.523599
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Fire" parent="." index="30" instance=ExtResource( 2 )]
 
 position = Vector2( 816, 448 )
 
-[node name="Fire2" parent="." index="29" instance=ExtResource( 2 )]
+[node name="Fire2" parent="." index="31" instance=ExtResource( 2 )]
 
 position = Vector2( 4320, 1968 )
 
-[node name="Fire3" parent="." index="30" instance=ExtResource( 2 )]
+[node name="Fire3" parent="." index="32" instance=ExtResource( 2 )]
 
 position = Vector2( 3007.92, 1588.51 )
 rotation = 0.523599
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Fire4" parent="." index="31" instance=ExtResource( 2 )]
+[node name="Fire4" parent="." index="33" instance=ExtResource( 2 )]
 
 position = Vector2( 1918, 960.47 )
 rotation = 0.523599
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Fire5" parent="." index="32" instance=ExtResource( 2 )]
+[node name="Fire5" parent="." index="34" instance=ExtResource( 2 )]
 
 position = Vector2( 4384, 1968 )
 
-[node name="Fire6" parent="." index="33" instance=ExtResource( 2 )]
+[node name="Fire6" parent="." index="35" instance=ExtResource( 2 )]
 
 position = Vector2( 4992, 1968 )
 
-[node name="Fire7" parent="." index="34" instance=ExtResource( 2 )]
+[node name="Fire7" parent="." index="36" instance=ExtResource( 2 )]
 
 position = Vector2( 6952.5, 2464 )
 scale = Vector2( 1.17187, 1.0625 )
 
-[node name="Fire11" parent="." index="35" instance=ExtResource( 2 )]
+[node name="Fire11" parent="." index="37" instance=ExtResource( 2 )]
 
 position = Vector2( 11968, 1456 )
 _sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="Fire12" parent="." index="36" instance=ExtResource( 2 )]
+[node name="Fire12" parent="." index="38" instance=ExtResource( 2 )]
 
 position = Vector2( 12672, 1440 )
 scale = Vector2( 1.625, 1.5 )
 
-[node name="Fire13" parent="." index="37" instance=ExtResource( 2 )]
+[node name="Fire13" parent="." index="39" instance=ExtResource( 2 )]
 
 position = Vector2( 12780, 1440 )
 scale = Vector2( 1.625, 1.5 )
 
-[node name="Fire8" parent="." index="38" instance=ExtResource( 2 )]
+[node name="Fire8" parent="." index="40" instance=ExtResource( 2 )]
 
 position = Vector2( 9632, 1456 )
 
-[node name="Pad2" parent="." index="39" instance=ExtResource( 7 )]
+[node name="Pad2" parent="." index="41" instance=ExtResource( 7 )]
 
 editor/display_folded = false
 position = Vector2( 9872, 1440 )
 
-[node name="Pad3" parent="." index="40" instance=ExtResource( 7 )]
+[node name="Pad3" parent="." index="42" instance=ExtResource( 7 )]
 
 position = Vector2( 10928, 1440 )
 
-[node name="Pad4" parent="." index="41" instance=ExtResource( 7 )]
+[node name="Pad4" parent="." index="43" instance=ExtResource( 7 )]
 
-position = Vector2( 12464, 1280 )
+position = Vector2( 12464, 1312 )
 
-[node name="Fire10" parent="." index="42" instance=ExtResource( 2 )]
+[node name="Pad7" parent="." index="44" instance=ExtResource( 7 )]
+
+position = Vector2( 7448, 2448 )
+
+[node name="Fire10" parent="." index="45" instance=ExtResource( 2 )]
 
 position = Vector2( 15600, 2016 )
 
-[node name="Fire14" parent="." index="43" instance=ExtResource( 2 )]
+[node name="Fire14" parent="." index="46" instance=ExtResource( 2 )]
 
 position = Vector2( 16120, 2016 )
 
-[node name="Fire15" parent="." index="44" instance=ExtResource( 2 )]
+[node name="Fire15" parent="." index="47" instance=ExtResource( 2 )]
 
 position = Vector2( 16752, 2016 )
 
-[node name="Fire16" parent="." index="45" instance=ExtResource( 2 )]
+[node name="Fire16" parent="." index="48" instance=ExtResource( 2 )]
 
 position = Vector2( 16816, 2016 )
+
+[node name="ParalaxLayers" type="CanvasLayer" parent="." index="49"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="ParalaxLayers" index="0"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = false
+_sections_unfolded = [ "Scroll" ]
+
+[node name="Sprite" type="Sprite" parent="ParalaxLayers/ParallaxBackground" index="0"]
+
+modulate = Color( 0.776471, 0.611765, 0.427451, 1 )
+position = Vector2( 567.538, 273.67 )
+scale = Vector2( 0.467841, 0.467841 )
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility", "Z Index" ]
 
 

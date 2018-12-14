@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scene/Stage1.gd" type="Script" id=1]
 [ext_resource path="res://Scene/Ground.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scene/Customer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/Fire.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scene/ParalaxLayers.tscn" type="PackedScene" id=7]
 
 [node name="Stage2" type="Node"]
 
@@ -78,5 +79,7 @@ position = Vector2( -704, 448 )
 
 editor/display_folded = false
 position = Vector2( 416, 448 )
+
+[node name="ParalaxLayers" parent="." index="16" instance=ExtResource( 7 )]
 
 

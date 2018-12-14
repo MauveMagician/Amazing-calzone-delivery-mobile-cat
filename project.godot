@@ -20,6 +20,10 @@ RankManager="*res://Scene/RankManager.gd"
 LevelManager="*res://Scene/LevelManager.gd"
 BG_Music_Player="*res://Scene/BG_Music_Player.tscn"
 BG_Music_Player2="*res://Scene/BG_Music_Player2.tscn"
+Explosion="*res://Scene/Explosion.tscn"
+JumpSound="*res://Scene/JumpSound.tscn"
+MotorSound="*res://Scene/MotorSound.tscn"
+Tada="*res://Scene/Tada.tscn"
 
 [display]
 

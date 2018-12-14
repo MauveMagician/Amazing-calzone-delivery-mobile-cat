@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scene/Stage1.gd" type="Script" id=1]
 [ext_resource path="res://Scene/Ground.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scene/Fire.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene/Customer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scene/PlayerCharacter.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scene/ParalaxLayers.tscn" type="PackedScene" id=8]
 
 [node name="Stage4" type="Node"]
 
@@ -119,5 +120,7 @@ position = Vector2( 8224, -336 )
 [node name="PlayerCharacter" parent="." index="24" instance=ExtResource( 7 )]
 
 position = Vector2( -544, 448 )
+
+[node name="ParalaxLayers" parent="." index="25" instance=ExtResource( 8 )]
 
 

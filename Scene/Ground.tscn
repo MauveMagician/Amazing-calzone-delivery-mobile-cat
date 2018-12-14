@@ -1,16 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scene/Ground.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://floor.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
 [node name="Ground" type="StaticBody2D"]
 
-editor/display_folded = true
 position = Vector2( 512, 544 )
 scale = Vector2( 16, 2 )
 input_pickable = false
@@ -25,12 +24,16 @@ _sections_unfolded = [ "Collision", "Material", "Visibility" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
+position = Vector2( -32.0251, -31.5071 )
+scale = Vector2( 0.0640517, 0.0642737 )
 texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 1.90735e-006, -1.04904e-005 )
-shape = SubResource( 3 )
+position = Vector2( 1.90735e-006, 0.49999 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 

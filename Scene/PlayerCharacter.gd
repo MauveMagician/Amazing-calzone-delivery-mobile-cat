@@ -50,6 +50,7 @@ func die():
 	self.find_node("UI Layer").add_child(losescreen)
 
 func win():
+	Tada.play()
 	get_tree().paused = true
 	RankManager.setRank(calzones.size(), float($"UI Layer/Control/TimeElapsed".text))
 	var winscreen = preload("res://scene/WinScreen.tscn").instance()
@@ -65,9 +66,15 @@ func _process(delta):
 	get_input()
 
 func _physics_process(delta):
+	if thrust != Vector2(0,0):
+		$Sprite/Sprite2.rotation += thrust.x/abs(thrust.x) * deg2rad(10)
+		$Sprite/Sprite3.rotation += thrust.x/abs(thrust.x) * deg2rad(10)
+		if not MotorSound.is_playing():
+			MotorSound.play()
 	self.set_applied_force(thrust + ray.get_collision_normal())
 	if ray.is_colliding() or ray2.is_colliding() or ray3.is_colliding() or ray4.is_colliding() or ray5.is_colliding() or ray6.is_colliding() or ray7.is_colliding():
 		if(jump != Vector2(0,0)):
+			JumpSound.play()
 			self.apply_impulse(Vector2(0,0), jump)
 			for i in calzones:
 				if i != null:
