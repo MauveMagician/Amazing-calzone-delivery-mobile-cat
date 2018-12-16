@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Sound/explosion.wav" type="AudioStream" id=1]
 
-[node name="Explosion" type="AudioStreamPlayer" index="0"]
+[node name="Explosion" type="AudioStreamPlayer"]
 
 stream = ExtResource( 1 )
 volume_db = -10.0

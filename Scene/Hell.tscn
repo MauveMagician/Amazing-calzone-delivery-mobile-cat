@@ -9,7 +9,7 @@
 [ext_resource path="res://Scene/Pad.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Sandro_Botticelli_-_La_Carte_de_l'Enfer.jpg" type="Texture" id=8]
 
-[node name="Hell" type="Node" index="0"]
+[node name="Hell" type="Node"]
 
 script = ExtResource( 1 )
 
