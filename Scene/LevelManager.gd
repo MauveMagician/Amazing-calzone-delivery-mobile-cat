@@ -18,10 +18,9 @@ func loadLevel():
 		for i in ranks:
 			if(i != "A"):
 				get_tree().change_scene("res://scene/Ending1.tscn")
-				queue_free()
 				return
 		hell = true
-		get_tree().change_scene("res://scene/Hell.tscn")
+		get_tree().change_scene("res://scene/HellStart.tscn")
 
 func appendLevel():
 	trackNo += 1

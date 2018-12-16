@@ -1,16 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scene/Customer.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://customer.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 25.8824, 25.0968 )
+extents = Vector2( 32, 66.1465 )
 
 [node name="Customer" type="Area2D"]
 
-editor/display_folded = true
 position = Vector2( 1844.28, 420.293 )
 scale = Vector2( 2, 2 )
 input_pickable = true
@@ -30,12 +29,14 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
+position = Vector2( 5.85999, -18.1465 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( -0.039711, -0.726399 )
+position = Vector2( 5.85999, -18.1465 )
+scale = Vector2( 0.112, 0.112 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 

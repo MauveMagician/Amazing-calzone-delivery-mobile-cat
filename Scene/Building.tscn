@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://THE_PIXEL.png" type="Texture" id=1]
+[ext_resource path="res://oob.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -26,8 +26,8 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 32.0126, 31.9995 )
-scale = Vector2( -63.998, -63.9454 )
+position = Vector2( -32, -32 )
+scale = Vector2( 0.213333, 0.213333 )
 texture = ExtResource( 1 )
 centered = false
 _sections_unfolded = [ "Animation", "Material", "Offset", "Pause", "Region", "Transform", "Visibility", "Z Index" ]

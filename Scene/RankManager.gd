@@ -1,7 +1,7 @@
 extends Node2D
 
 export var CurrentRank = "n/a"
-onready var StageRanks = ["n/a", "n/a", "n/a", "n/a", "n/a"]
+onready var StageRanks = ["n/a", "n/a", "n/a", "n/a"]
 var calzones = 5
 
 func getStageRanks():

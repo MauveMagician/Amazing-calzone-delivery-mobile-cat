@@ -57,6 +57,14 @@ func win():
 	winscreen.calzones = calzones.size()
 	self.find_node("UI Layer").add_child(winscreen)
 
+func hell_win():
+	Tada.play()
+	get_tree().paused = true
+	RankManager.setRank(calzones.size(), float($"UI Layer/Control/TimeElapsed".text))
+	var winscreen = preload("res://scene/HellWinScreen.tscn").instance()
+	winscreen.calzones = calzones.size()
+	self.find_node("UI Layer").add_child(winscreen)
+
 func _ready():
 	rank = RankManager.get()
 	$"UI Layer/Control/RankLetter".text = str(rank)

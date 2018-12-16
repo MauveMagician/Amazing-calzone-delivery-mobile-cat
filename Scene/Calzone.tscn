@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scene/Calzone.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://calzone.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 48, 16 )
 
-[node name="Calzone" type="RigidBody2D"]
+[node name="Calzone" type="RigidBody2D" index="0"]
 
 position = Vector2( 64, 352 )
 input_pickable = false
@@ -35,8 +35,8 @@ _sections_unfolded = [ "Angular", "Collision", "Linear" ]
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
 position = Vector2( -3.8147e-006, 16 )
-scale = Vector2( 1.5, 0.5 )
 texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="RayCast2D" type="RayCast2D" parent="." index="1"]
 

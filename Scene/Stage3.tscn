@@ -69,12 +69,10 @@ scale = Vector2( 1.00001, 1 )
 
 [node name="Fire" parent="." index="12" instance=ExtResource( 4 )]
 
-editor/display_folded = false
 position = Vector2( 7328, 1152 )
 
 [node name="Customer" parent="." index="13" instance=ExtResource( 5 )]
 
-editor/display_folded = false
 position = Vector2( 8544, 1120 )
 
 [node name="PlayerCharacter" parent="." index="14" instance=ExtResource( 6 )]

@@ -134,7 +134,7 @@ position = Vector2( 20448, 1280 )
 
 [node name="PlayerCharacter" parent="." index="26" instance=ExtResource( 6 )]
 
-position = Vector2( 288, 448 )
+position = Vector2( 240, 448 )
 
 [node name="Pad" parent="." index="27" instance=ExtResource( 7 )]
 
@@ -208,7 +208,6 @@ position = Vector2( 9632, 1456 )
 
 [node name="Pad2" parent="." index="41" instance=ExtResource( 7 )]
 
-editor/display_folded = false
 position = Vector2( 9872, 1440 )
 
 [node name="Pad3" parent="." index="42" instance=ExtResource( 7 )]
